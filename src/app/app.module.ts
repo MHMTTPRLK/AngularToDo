@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TodoComponent } from './todo/todo.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { TodoComponent } from './todo/todo.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
